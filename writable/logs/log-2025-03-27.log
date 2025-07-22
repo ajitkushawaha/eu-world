@@ -1,0 +1,193 @@
+INFO - 2025-03-27 11:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 11:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 11:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 11:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 11:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-27 11:29:30 --> mysqli_sql_exception: Operand should contain 1 column(s) in /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/MySQLi/Connection.php(306): mysqli->query('UPDATE `pages` ...', 0)
+#1 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pages` ...')
+#2 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pages` ...')
+#3 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `pages` ...', Array, false)
+#4 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/BaseModel.php(949): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Model.php(776): CodeIgniter\BaseModel->update(NULL, Array)
+#7 /home/stagingbdsd/public_html/eu-world.com/adminpanel/app/Modules/Pages/Controllers/Pages.php(216): CodeIgniter\Model->update()
+#8 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/CodeIgniter.php(919): Modules\Pages\Controllers\Pages->edit_pages()
+#9 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modules\Pages\Controllers\Pages))
+#10 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/stagingbdsd/public_html/eu-world.com/adminpanel/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-03-27 11:29:30 --> Operand should contain 1 column(s)
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `pages` SET `title` = :title:, `slug_url` = :slug_url:, `visa_categories` = :visa_categories:, `custom_url` = :custom_url:, `content` = :content:, `feature_content1` = :feature_content1:, `feature_content2` = :feature_content2:, `status` = :status:, `meta_robots` = :meta_robots:, `meta_title` = :meta_title:, `meta_keyword` = :meta_keyword:, `meta_description` = :meta_description:, `faq_title` = :faq_title:, `faq_status` = :faq_status:, `faq_question_answer` = :faq_question_answer:, `modified` = :modified:, `banner_image` = :banner_image:
+WHERE `id` = :id:
+AND `web_partner_id` = :web_partner_id:', [...], false)
+ 2 SYSTEMPATH/Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 4 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 5 APPPATH/Modules/Pages/Controllers/Pages.php(216): CodeIgniter\Model->update()
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modules\Pages\Controllers\Pages->edit_pages()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modules\Pages\Controllers\Pages))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-27 11:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 11:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-27 11:30:19 --> mysqli_sql_exception: Operand should contain 1 column(s) in /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/MySQLi/Connection.php(306): mysqli->query('UPDATE `pages` ...', 0)
+#1 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pages` ...')
+#2 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pages` ...')
+#3 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `pages` ...', Array, false)
+#4 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/BaseModel.php(949): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Model.php(776): CodeIgniter\BaseModel->update(NULL, Array)
+#7 /home/stagingbdsd/public_html/eu-world.com/adminpanel/app/Modules/Pages/Controllers/Pages.php(216): CodeIgniter\Model->update()
+#8 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/CodeIgniter.php(919): Modules\Pages\Controllers\Pages->edit_pages()
+#9 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modules\Pages\Controllers\Pages))
+#10 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/stagingbdsd/public_html/eu-world.com/adminpanel/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-03-27 11:30:19 --> Operand should contain 1 column(s)
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `pages` SET `title` = :title:, `slug_url` = :slug_url:, `visa_categories` = :visa_categories:, `custom_url` = :custom_url:, `content` = :content:, `feature_content1` = :feature_content1:, `feature_content2` = :feature_content2:, `status` = :status:, `meta_robots` = :meta_robots:, `meta_title` = :meta_title:, `meta_keyword` = :meta_keyword:, `meta_description` = :meta_description:, `faq_title` = :faq_title:, `faq_status` = :faq_status:, `faq_question_answer` = :faq_question_answer:, `modified` = :modified:, `banner_image` = :banner_image:
+WHERE `id` = :id:
+AND `web_partner_id` = :web_partner_id:', [...], false)
+ 2 SYSTEMPATH/Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 4 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 5 APPPATH/Modules/Pages/Controllers/Pages.php(216): CodeIgniter\Model->update()
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modules\Pages\Controllers\Pages->edit_pages()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modules\Pages\Controllers\Pages))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-27 11:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 11:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-27 11:32:24 --> mysqli_sql_exception: Operand should contain 1 column(s) in /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/MySQLi/Connection.php(306): mysqli->query('UPDATE `pages` ...', 0)
+#1 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pages` ...')
+#2 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pages` ...')
+#3 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `pages` ...', Array, false)
+#4 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/BaseModel.php(949): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Model.php(776): CodeIgniter\BaseModel->update(NULL, Array)
+#7 /home/stagingbdsd/public_html/eu-world.com/adminpanel/app/Modules/Pages/Controllers/Pages.php(216): CodeIgniter\Model->update()
+#8 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/CodeIgniter.php(919): Modules\Pages\Controllers\Pages->edit_pages()
+#9 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modules\Pages\Controllers\Pages))
+#10 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/stagingbdsd/public_html/eu-world.com/adminpanel/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-03-27 11:32:24 --> Operand should contain 1 column(s)
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `pages` SET `title` = :title:, `slug_url` = :slug_url:, `visa_categories` = :visa_categories:, `custom_url` = :custom_url:, `content` = :content:, `feature_content1` = :feature_content1:, `feature_content2` = :feature_content2:, `status` = :status:, `meta_robots` = :meta_robots:, `meta_title` = :meta_title:, `meta_keyword` = :meta_keyword:, `meta_description` = :meta_description:, `faq_title` = :faq_title:, `faq_status` = :faq_status:, `faq_question_answer` = :faq_question_answer:, `modified` = :modified:, `banner_image` = :banner_image:
+WHERE `id` = :id:
+AND `web_partner_id` = :web_partner_id:', [...], false)
+ 2 SYSTEMPATH/Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 4 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 5 APPPATH/Modules/Pages/Controllers/Pages.php(216): CodeIgniter\Model->update()
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modules\Pages\Controllers\Pages->edit_pages()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modules\Pages\Controllers\Pages))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-27 11:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 11:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 11:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-27 11:32:54 --> mysqli_sql_exception: Operand should contain 1 column(s) in /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/MySQLi/Connection.php(306): mysqli->query('UPDATE `pages` ...', 0)
+#1 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pages` ...')
+#2 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pages` ...')
+#3 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `pages` ...', Array, false)
+#4 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/BaseModel.php(949): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/Model.php(776): CodeIgniter\BaseModel->update(NULL, Array)
+#7 /home/stagingbdsd/public_html/eu-world.com/adminpanel/app/Modules/Pages/Controllers/Pages.php(216): CodeIgniter\Model->update()
+#8 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/CodeIgniter.php(919): Modules\Pages\Controllers\Pages->edit_pages()
+#9 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modules\Pages\Controllers\Pages))
+#10 /home/stagingbdsd/public_html/eu-world.com/adminpanel/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/stagingbdsd/public_html/eu-world.com/adminpanel/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-03-27 11:32:54 --> Operand should contain 1 column(s)
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `pages` SET `title` = :title:, `slug_url` = :slug_url:, `visa_categories` = :visa_categories:, `custom_url` = :custom_url:, `content` = :content:, `feature_content1` = :feature_content1:, `feature_content2` = :feature_content2:, `status` = :status:, `meta_robots` = :meta_robots:, `meta_title` = :meta_title:, `meta_keyword` = :meta_keyword:, `meta_description` = :meta_description:, `faq_title` = :faq_title:, `faq_status` = :faq_status:, `faq_question_answer` = :faq_question_answer:, `modified` = :modified:, `banner_image` = :banner_image:
+WHERE `id` = :id:
+AND `web_partner_id` = :web_partner_id:', [...], false)
+ 2 SYSTEMPATH/Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 4 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 5 APPPATH/Modules/Pages/Controllers/Pages.php(216): CodeIgniter\Model->update()
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modules\Pages\Controllers\Pages->edit_pages()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modules\Pages\Controllers\Pages))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-27 11:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 11:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 11:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 11:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 11:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 12:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 15:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 15:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 15:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 15:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 15:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 15:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 15:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 15:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 15:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 15:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 15:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-27 15:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
